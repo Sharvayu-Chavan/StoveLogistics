@@ -1,0 +1,41 @@
+#StoveMap {
+    height: 730px;
+    width: 80%;
+}
+
+.leaflet-popup-content {
+    width: auto;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.aside {
+    float: right;
+    width: 80%;
+}
+
+.NextTo {
+    float: left;
+    width: 70%;
+    text-align: center;
+
+}
+
+
+#StoveMap {
+    width: 100%;
+    height: 730px;
+}
+
+#StoveSearch {
+    width: 20%;
+    float: left;
+    height: 730px;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}

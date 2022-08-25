@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stove Position</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="aside">
+    <div id="StoveMap"></div>
+  </div>
+  <div id="StoveSearch">
+    <h3 ALIGN="center">Stove Search and Information</h3>
+
+    <input id="SerialNumber" placeholder="Enter Serial Number">
+    <br>
+    <button onclick="SearchSerial()" id="SubmitButton">Find Stove</button>
+    <br>
+
+    <h4 id="SN"></h4>
+    <h4 id="STN"></h4>
+    <h4 id="LA"></h4>
+    <h4 id="LO"></h4>
+    <h4 id="D"></h4>
+    <h4 id="T"></h4>
+    <h4 id="BT"></h4>
+    <h4 id="ET"></h4>
+    <h4 id="TWH"></h4>
+    <h4 id="ECE"></h4>
+    <h4 id="S"></h4>
+
+    <div class="NextTo">
+      <img src="StoveIconOn.png" alt="Status On" width="30" height="30">
+      <h4> Stove Status: ON </h4>
+      <img src="StoveIconOff.png" alt="Status Off" width="30" height="30">
+      <h4> Stove Status: OFF </h4>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
